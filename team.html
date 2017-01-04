@@ -17,12 +17,8 @@
 
   <!-- Theme CSS -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
-  <style>
+  <link rel="stylesheet" href="css/custom.css">
 
-  .img-center {
-    margin: 0 auto;
-  }
-  </style>
   <!-- Custom Fonts -->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -40,21 +36,20 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-custom navbar-static-top" id="sticky-navbar">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header page-scroll">
+      <div class="navbar-header navbar-static-top page-scroll">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
           Menu <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand" href="index.html">Home</a>
-        <a class="navbar-brand" style="color: #fff000;" href="https://www.eventbrite.nl/e/science-hack-day-india-2016-tickets-26734872724" target="_blank">Click to Register</a>
+        <a class="navbar-brand" id="navbar-icon" href="index.html"><img src="img/shdbelgaum.png" alt="logo"></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right" id="links-top-menu">
           <li>
             <a href="index.html">Home</a>
           </li>
@@ -65,16 +60,16 @@
             <a href="mentors.html">Mentors & Hack Ideas</a>
           </li>
           <li>
-            <a href="/index.html#sponsors">Sponsors</a>
+            <a href="index.html#sponsors">Sponsors</a>
           </li>
           <li>
-            <a href="/index.html#schedule-shd">SHD Schedule</a>
+            <a href="index.html#schedule-shd">SHD Schedule</a>
           </li>
           <li>
-            <a href="/index.html#schedule-workshops">Workshop Schedule</a>
+            <a href="index.html#schedule-workshops">Workshop Schedule</a>
           </li>
           <li>
-            <a href="/index.html#about">About SHD</a>
+            <a href="index.html#about">About SHD</a>
           </li>
           <li>
             <a href="http://sciencehackday.org/" target="_blank">SHD Global Site</a>
@@ -88,7 +83,7 @@
 
   <!-- Page Header -->
   <!-- Set your background image for this header on the line below. -->
-  <header class="intro-header" style="background-image: linear-gradient(120deg, #155799, #159957); ">
+  <header class="intro-header">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -306,12 +301,6 @@
     </div>
   </div>
 </div>
-<style>
-          a:link    {color:#5454E3; background-color:transparent; text-decoration:underline}
-          a:visited {color:#45435F; background-color:transparent; text-decoration:none}
-          a:hover   {color:#1B22C3; background-color:transparent; text-decoration:underline}
-          a:active  {color:yellow; background-color:transparent; text-decoration:underline}
-          </style>
 <hr>
 
 <!-- Footer -->
@@ -360,6 +349,9 @@
 
 <!-- Theme JavaScript -->
 <script src="js/clean-blog.min.js"></script>
+
+<!-- Sticky navbar script -->
+<script src="js/stickynavbar.js"></script>
 
 </body>
 
