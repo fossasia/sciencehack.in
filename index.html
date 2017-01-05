@@ -38,7 +38,7 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-custom navbar-static-top">
+  <nav class="navbar navbar-default navbar-custom navbar-static-top" id="sticky-navbar">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header navbar-static-top page-scroll">
@@ -46,13 +46,12 @@
           <span class="sr-only">Toggle navigation</span>
           Menu <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand" href="index.html">Home</a>
-        <a class="navbar-brand" style="color: #fff000;" href="https://www.eventbrite.nl/e/science-hack-day-india-2016-tickets-26734872724" target="_blank">Click here to Register!</a>
+        <a class="navbar-brand" id="navbar-icon" href="index.html"><img src="img/shdbelgaum.png" alt="logo"></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right" id="links-top-menu">
           <li>
             <a href="index.html">Home</a>
           </li>
@@ -86,7 +85,7 @@
 
   <!-- Page Header -->
   <!-- Set your background image for this header on the line below. -->
-  <header class="intro-header" style="background-image: linear-gradient(120deg, #155799, #159957); ">
+  <header class="intro-header">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -165,7 +164,7 @@
         <h1 id='about' class="post-title">
           What is Science Hack Day?
         </h1>
-        Science Hack Day is a two-day event where anyone excited about making weird, silly or serious things with science comes together in the same physical space to see what they can prototype within 30 consecutive hours. Designers, developers, scientists and anyone who is excited about making things with science are welcome to attend – <span style="color: #333399;">no experience in science or hacking is necessary, just an insatiable curiosity.</span>
+        Science Hack Day is a two-day event where anyone excited about making weird, silly or serious things with science comes together in the same physical space to see what they can prototype within 30 consecutive hours. Designers, developers, scientists and anyone who is excited about making things with science are welcome to attend – <span class="highlighted-text">no experience in science or hacking is necessary, just an insatiable curiosity.</span>
 
         The mission of Science Hack Day is to get excited and make things with science! People organically form multidisciplinary teams over the course of a weekend: particle physicists team up with designers, marketers join forces with open source rocket scientists, writers collaborate with molecular biologists, and developers partner with school kids. By collaborating on focused tasks during this short period, small groups of hackers are capable of producing remarkable results.
 
@@ -174,7 +173,7 @@
           <h1 id='venue' class="post-title">
             Venue
           </h1>
-          We have an amazing place called <span style="color: #800080;"><a style="color: #800080;" href="http://sankalphospitality.in/" target="_blank">Sankalp Bhumi  </a></span> Farm Resort for this event. It was once an abandoned quarry,  today natures glory restored. The resort resembles an enchanting oasis, with a thick set of trees, sprawling lawns, and a large lagoon surrounded by picturesque expansive rock walls as backdrop.
+          We have an amazing place called <span><a href="http://sankalphospitality.in/" target="_blank">Sankalp Bhumi  </a></span> Farm Resort for this event. It was once an abandoned quarry,  today natures glory restored. The resort resembles an enchanting oasis, with a thick set of trees, sprawling lawns, and a large lagoon surrounded by picturesque expansive rock walls as backdrop.
           <hr>
           <center>
             <img class="img-responsive" src="http://blog.fossasia.org/wp-content/uploads/2016/07/5-1-750x422.jpg" alt="5" width="750" height="422" />
@@ -287,14 +286,8 @@
             <h2 id='sponsors' class="post-title">
               Organizing Partners
             </h2>
-            <p style="text-align:center; color:#7E7E88">Amazing People/Organizations helping us to make SHD India, happen !</p>
+            <p class="gray-aligned-text">Amazing People/Organizations helping us to make SHD India, happen !</p>
           </div>
-          <style>
-          a:link    {color:#2B2B63; background-color:transparent; text-decoration:underline}
-          a:visited {color:#45435F; background-color:transparent; text-decoration:none}
-          a:hover   {color:#1B22C3; background-color:transparent; text-decoration:underline}
-          a:active  {color:yellow; background-color:transparent; text-decoration:underline}
-          </style>
           <div class="col-lg-4 col-sm-6 text-center">
             <img class="" src="img/fossasia.jpg" alt="">
             <a href="http://fossasia.org"target="_blank">fossasia.org</a>
@@ -307,14 +300,14 @@
             <img class="" src="img/sankalpbhoomi.jpg" alt="">
             <a href="http://sankalphospitality.in/"target="_blank">sankalphospitality.in</a>
           </div>
-          <p style="text-align:center; color:#7E7E88">------------------</p>
+          <p class="gray-aligned-text">------------------</p>
 
 		<hr>
           <div class="post-preview">
             <h2 id='' class="post-title">
               Media Partners
             </h2>
-            <p style="text-align:center; color:#7E7E88"></p>
+            <p class="gray-aligned-text"></p>
           </div>
           
           <div class="col-lg-12 col-sm-6 text-center">
@@ -324,14 +317,14 @@
           </div>
           
           
-	<!-------Sponsors---------------->
+	<!--Sponsors-->
           <div class="post-preview">
             <h2 id='sponsors' class="post-title">
               Sponsors
             </h2>
-            <p style="color:#52525E">Sponsorship helps keep Science Hack Day a free and fun event for the community to attend. In addition to being free to attend, Science Hack Day is organized by volunteers and wouldn’t be possible without sponsors. It’s only due to the graciousness of our sponsors that we’ll all be fueled with food, drink, shelter, and the various technological necessities for our hacking. </p>
+            <p class="gray-black">Sponsorship helps keep Science Hack Day a free and fun event for the community to attend. In addition to being free to attend, Science Hack Day is organized by volunteers and wouldn’t be possible without sponsors. It’s only due to the graciousness of our sponsors that we’ll all be fueled with food, drink, shelter, and the various technological necessities for our hacking. </p>
             <a href="https://github.com/wavicles/sciencehack.in/raw/gh-pages/docs/SHD-Belgaum-sponsorship-final.pdf">Sponsorship Prospectus</a>
-            <p style="text-align:center; color:#7E7E88">Supporting creativity & innovation -Our Generous sponsors</p>
+            <p class="gray-aligned-text">Supporting creativity & innovation -Our Generous sponsors</p>
           </div>
           <div class="col-lg-4 col-sm-6 text-center">
             <img class="" src="img/pearl1.jpg" alt="">
@@ -345,7 +338,7 @@
             <img class="" src="img/rachna.jpg" alt="">
             <a href="http://www.rachanasoft.com/"target="_blank">Rachana Infotech</a>
           </div>
-           <p> <font color=#FFFFFF>------------------------------------ </font></p>
+           <p class="white-color">------------------------------------</p>
            
           <div class="col-lg-4 col-sm-6 text-center">
             <img class="" src="img/cspark1.jpg" alt="">
@@ -361,7 +354,7 @@
             <img class="" src="img/ub.jpg" alt="">
             <a href="http://hotelnewudaybhuvan.com/"target="_blank">Uday Bhuvan</a>
           </div>
-           <p> <font color=#FFFFFF>------------------------------------ </font></p>
+           <p class="white-color">------------------------------------</p>
            
           <div class="col-lg-4 col-sm-6 text-center">
             <img class="" src="img/dipakcon.png" alt="">
@@ -376,7 +369,7 @@
             <a href="http://dadsonsgroup.com/"target="_blank">Dadsons Group</a>
           </div>
           
-          <p> <font color=#FFFFFF>------------------------------------ </font></p>
+          <p class="white-color">------------------------------------</p>
           <div class="col-lg-4 col-sm-6 text-center">
             <img class="" src="img/hydromax.jpg" alt="">
             <a href="http://hydromax.in/"target="_blank">Hydromax</a>
@@ -391,13 +384,13 @@
         </li>
       </ul>-->
     </div>
-    <p> <font color=#FFFFFF>------------------------------------ </font></p>
+    <p class="white-color">------------------------------------</p>
     <hr>
     <div class="post-preview">
             <h2 id='sponsors' class="post-title">
               
             </h2>
-            <p style="color:#52525E">Individual science enthusiasts supporting the event with sponsorships </p>
+            <p class="gray-black">Individual science enthusiasts supporting the event with sponsorships </p>
              <ul> Shri Ashok Shanbhag</ul>  
              <ul> Shri Mahesh Kodchwadkar</ul>
              <ul> Shri B L Majukar</ul>
@@ -461,6 +454,9 @@
 
 <!-- Theme JavaScript -->
 <script src="js/clean-blog.min.js"></script>
+
+<!-- Sticky navbar script -->
+<script src="js/stickynavbar.js"></script>
 
 </body>
 

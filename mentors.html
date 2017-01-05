@@ -17,12 +17,7 @@
 
   <!-- Theme CSS -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
-  <style>
-
-  .img-center {
-    margin: 0 auto;
-  }
-  </style>
+  <link rel="stylesheet" href="css/custom.css">
   <!-- Custom Fonts -->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -40,21 +35,20 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-custom navbar-static-top" id="sticky-navbar">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header page-scroll">
+      <div class="navbar-header navbar-static-top page-scroll">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
           Menu <i class="fa fa-bars"></i>
         </button>
-        <a class="navbar-brand" href="index.html">Home</a>
-        <a class="navbar-brand" style="color: #fff000;" href="https://www.eventbrite.nl/e/science-hack-day-india-2016-tickets-26734872724" target="_blank">Click to Register</a>
+        <a class="navbar-brand" id="navbar-icon" href="index.html"><img src="img/shdbelgaum.png" alt="logo"></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right" id="links-top-menu">
           <li>
             <a href="index.html">Home</a>
           </li>
@@ -65,16 +59,16 @@
             <a href="mentors.html">Mentors & Hack Ideas</a>
           </li>
           <li>
-            <a href="/index.html#sponsors">Sponsors</a>
+            <a href="index.html#sponsors">Sponsors</a>
           </li>
           <li>
-            <a href="/index.html#schedule-shd">SHD Schedule</a>
+            <a href="index.html#schedule-shd">SHD Schedule</a>
           </li>
           <li>
-            <a href="/index.html#schedule-workshops">Workshop Schedule</a>
+            <a href="index.html#schedule-workshops">Workshop Schedule</a>
           </li>
           <li>
-            <a href="/index.html#about">About SHD</a>
+            <a href="index.html#about">About SHD</a>
           </li>
           <li>
             <a href="http://sciencehackday.org/" target="_blank">SHD Global Site</a>
@@ -88,7 +82,7 @@
 
   <!-- Page Header -->
   <!-- Set your background image for this header on the line below. -->
-  <header class="intro-header" style="background-image: linear-gradient(120deg, #155799, #159957); ">
+  <header class="intro-header">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -195,7 +189,7 @@
                 <p>Hong Phuc Dang has lived several years in the US and Singapore after her childhood in Vietnam. Apart from the fascination in mathematics and technology she is interested in how technology can improve peoples live.</p>
                 <p>As a member of the FashionTec working group she works on topics of mathematical grading of garment patterns.She also coordinates the Google Summer of Code program of the project.</p>
                 <p>Hong Phuc has appeared at International Open Source events like the Libre Graphics Meeding and organized hackathons and workshops in Vietnam and Cambodia. She is also a core-member of GNOME.Asia and FOSSASIA. Professionally, Hong Phuc works as a consultant and researcher for an International data research company. </p>
-                <a class="btn btn-primary" href="#senseBox">Hack Idea : senseBox <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#senseBox">Hack Idea : senseBox <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -215,7 +209,7 @@
                 <p>A well known name in the Python community of India. CPython core developer, currently working as Fedora Cloud Engineer at Red Hat.</p>
                 <p>Kushal has been elected as a Director at the Python Software Foundation. He has been a mentor and an Ambassador at The Fedora Project. Along side his contributions to CPython, Kushal has also been contributing to a wide variety of upstream projects.</p>
                 <p>He started <a href="https://dgplug.org/">'dgplug'</a> - Linux Users Group of Durgapur and wrote a book titled <a href="https://kushaldas.in/details/pym.pdf">"Python for you and me"</a>. Kushal has been coordinating the DGPLUG summer training program for many years to help new participants take their first steps in contributing to Free and Open Source Software.</p>
-                <a class="btn btn-primary" href="#nodemcu">Hack Idea : NodeMCU and Sensors  <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#nodemcu">Hack Idea : NodeMCU and Sensors  <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -236,7 +230,7 @@
                 <p>Young Scientist in the making. Masters in Physics from Indian Institute of Science Education and Research, Mohali. <p>Jithin is working on instrumentation for labs and has independently developed severel python powered versatile lab tools, latest one is SEELABLET - An instrumentation cluster for science and engineering experiments. </p>
                 <p>Jithin has been awarded Junior Science Talent Search Examination (JSTSE) Scholorship and Kishore Vaigyanik Protsahan Yojana(KVPY) Scholarship. He also has many awards in the field of robotics, football and volleyball.</p>
                 <p> Accomplished flautist, guitarist and Sangeet Bhushan awarded by Pracheen kala kendra for vocal classical - A multidimensional young genius, indeed! </p>
-                <a class="btn btn-primary" href="#seelablet">Hack Idea : SeeLablet and Solar Lantern  <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#seelablet">Hack Idea : SeeLablet and Solar Lantern  <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -256,7 +250,7 @@
                 <p>A motivated and charismatic individual! Founder and CEO at Bangalore Makespace and Open Source Creativity, which is now the largest maker community in India.</p>
                 <p>A devout advocate and ambassador of the Maker Movement, Kavita believes in harnessing the power of collaboration in creative communities and has been instrumental in setting the stage for Makers, Hackers and Do-It-Togetherers’ to join hands and co-create with one another.</p>
 				<p>Kavita graduated with a Masters of Science in Electrical and Computer Engineering from Carnegie Mellon University, Pennsylvania, USA, where she also worked as an Associate Researcher at The Robotics Institute (RI) and The Language Technologies Institute as part of CMU’s School of Computer Science.</p>
-                <a class="btn btn-primary" href="#BeamBot">Hack Idea : Beam Bot <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#BeamBot">Hack Idea : Beam Bot <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -275,7 +269,7 @@
                 <h4>Subheading</h4>
                 <p>Nitesh is a computer scientist, a hardware hacker and a amateur flutist. He likes to build stuff using laser cutting, 3D printing, leds and junk hardware.</p>
                 <p>He has made his own 3D printer for printing with edible materials like chocolate and Halwa using opensource tools. He also works in robotics. As an exchange student, he has worked with Professor Raul Rojas at Free University Berlin, and programmed a simultaneous localization and mapping (SLAM) algorithm for a small autonomous car. At IIIT Bangalore, he has worked on programming a collision avoidance mechanism for the prototype of an autonomous wheelchair using bio-inspired collision avoiding behavior of a grasshopper</p>
-                <a class="btn btn-primary" href="">Hack Idea : Laser Printers <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="">Hack Idea : Laser Printers <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -295,7 +289,7 @@
                 <h4>ICFOSS Kerala</h4>
                 <p>Friend , Programmer , Teacher , Amateur musician , Social entrepreneur, OSH / FOSS advocate. </p>
                 <p>Akshai is Research assistant at FOSSEE, IIT Bombay, Co-Founder at Microhope Foundation, Former OSH Developer at ICFOSS , Govt. of Kerala. Former Fellow at Kerala Start-Up Mission. He  Studied Electronics and Communication engineering at College of Engineering Kallooppara.</p>
-                <a class="btn btn-primary" href="#esp">Hack Idea : ESP12 Module <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#esp">Hack Idea : ESP12 Module <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -317,7 +311,7 @@
                 <p>A Physics Teacher who loves FOSS, Fedora, Python and believes that <font color="#2C12DA">'A Clean House is a Sign of a Wasted Life !'</font></p>
                 <p>Praveen has been a Fossasia-GSoC :Google Summer of Code alumnus (internship for three years,2014, 2015 and 2016). He is also mentor for Google Code-In and proud Fedora volunteer. Actively involved in ExpEYES project, teacher training programs and currently working on Pocket Science Lab  along with Jithin B P. </p>
                 <p>He is currently pursuing PhD in Physics from VTU, Belgaum. E-content developer for National Repository of Open Educational Resources (NROER) for School Education by Central Institute of Education Technology (CIET) and a member of committee for “Development of ICT Refresher Course for students and teachers” @ CIET-NCERT, New Delhi.</p>
-                <a class="btn btn-primary" href="#laser">Hack Idea : Patterns using Lasers<span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#laser">Hack Idea : Patterns using Lasers<span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -338,7 +332,7 @@
                 <p>Open Source enthusiast and full stack developer who loves anything in Python or JavaScript</p>
                 <p>Saptak was a GSoCer in year 2016 with FOSSASIA. He has also been a mentor in Google Code-in 2015. He is an organizer in Google Developer's Group, Allahabad and has been an active contributor in many open source organisations.</p>
                 <p>He is presently an undergrad in Information Technology doing his final years in IIIT Allahabad. Apart from development he is hugely interested in research topics like Natural Language Processing and Cognitive Science using EDA signal.</p>
-                <a class="btn btn-primary" href="#chrome-extension">Hack Idea : Fun with Chrome Extension Development<span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#chrome-extension">Hack Idea : Fun with Chrome Extension Development<span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -356,7 +350,7 @@
                 <h3>We wish to see you here...!</h3>
                 <h4>For the love of Science!</h4>
                 <p>Propose a hack and be a mentor. Hack Idea can be anything from science, Tech, software or an app.</p>
-                <a class="btn btn-primary" href="#">Science Hack Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#">Science Hack Project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -374,7 +368,7 @@
                 <h3>Amazing Mentor</h3>
                 <h4>For the love of Science!</h4>
                 <p>Propose a hack idea and be a mentor. Let's learn together.</p>
-                <a class="btn btn-primary" href="#">Science Hack Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#">Science Hack Project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -404,7 +398,7 @@
                 <h4>Mentor : <a href="#hongphuc">Hong Phuc Dang</a></h4>
                 <p>Hong Phuc is getting this amazing tool to SHD. <a href="https://www.sensebox.de/en/"target="_blank">The senseBox</a> is a do-it-yourself kit for stationary and mobile sensor stations – the Citizen Science Toolkit.</p>
                 <p> With senseBox , citizens and schools are able to collect environmental data using sensors for climate (weather, air quality), transport (traffic density or noise pollution) and many more phenomena to find out more about the environment. The data collected may be published as open data on the openSenseMap. </p>
-                <a class="btn btn-primary" href="">Join this project<span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="">Join this project<span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -423,7 +417,7 @@
                 <h4>Mentor : <a href="#kushal">Kushal Das</a></h4>
                 <p><a href="http://nodemcu.com/index_en.html"target="_blank">NodeMCU</a> is an open-source firmware and development kit that helps you to prototype your IOT product within a few script lines. Join Kushal in this hack to create amazing science tools with NodeMCU, Temperature Sensors and power of Python Programming Language.</p>
                
-                <a class="btn btn-primary" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -442,7 +436,7 @@
                 <h4>Mentor : <a href="#kavita">Kavita Arora</a></h4>
                 <p>BEAM robotics (from Biology, Electronics, Aesthetics and Mechanics) is a style of robotics that primarily uses simple analogue circuits, such as comparators, instead of a microprocessor in order to produce an unusually simple design.</p>
                 <p>While not as flexible as microprocessor based robotics, BEAM robotics can be robust and efficient in performing the task for which it was designed. <a href="http://www.instructables.com/id/how-to-build-a-BEAM-symet/"target="_blank">BEAM robots</a> may use a set of the analog circuits, mimicking biological neurons, to facilitate the robot's response to its working environment.</p>
-                <a class="btn btn-primary" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -463,7 +457,7 @@
                 <p> Velocity measurement with lasers and photosensors . Jithin will be using the <a href="http://www.seelablet.jithinbp.in/"target="_blank"> SEELablet</a>, <font color="#525E95">an awesome instrumentation cluster made by our own young scientist Jithin himself</font></p>
                 <p> Seelablet can be used to measure time intervals between successive obstructions to a laser beam that is incident on a photo transistor. We can measure speeds of athletes , or other things like the speed of a karate chop.</p>
                
-                <a class="btn btn-primary" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -483,7 +477,7 @@
                 <p> Hacking the solar garden lamps to automatically detect human/animal presence using Passive IR sensor </p>
                 <p> We are making solar lanterns as a part of 'Science Toys and Soldering' Workshops for highschool kids, to be conducted at SHD Belgaum. The concept and design of the solar lantern is by Jithin B P and Praveen Patil with support and inspiration from <a href="https://twitter.com/freaklabs?lang=en"target="_blank">Akiba @freaklabs</a></p>
                 <p>Lets hack these solar lanterns to make them useful as beautiful detectors lamps in the garden.</p>
-                <a class="btn btn-primary" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -507,7 +501,7 @@
                 <p>"Lissajous Figures, Spirographs, Harmonograms and Cymatics" - <font color="#4C47BE">Recreating the unseen into seen art and science! </font></p>
                 <p> Nature has been a perennial source of inspiration for many! Artists, architects, designers imitate the design patterns of nature; poets describe its beauty and scientists try to unravel the mysteries of nature. A deep look into nature unlocks imagination, and inspires creativity. Here, we will try to create few amazing patterns and mashups  with Light, Sound and Physics!</p>
                
-                <a class="btn btn-primary" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -528,7 +522,7 @@
                 <p>By talking, humming, or singing into the Sound Visualizer, you’ll be able to see sound as vibrations (or pressure waves) and experience beautiful patterns and resonant vibration modes.</p>
                 <p>Lets make the device from available resources, innovate and add better safety features to enable it to be used by kids.</p>
                
-                <a class="btn btn-primary" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -549,7 +543,7 @@
                 <p>Learn by Exploring and Experimenting can be assiated with simple demonstration tools that can make the science concepts easy to understand.</p>
                 <p>In this hack we will try to setup cool demos with Laser light to explain various optical phenomena, fluorescence and photochromism</p>
                
-                <a class="btn btn-primary" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -569,7 +563,7 @@
                 <h4>Mentor : <a href="#akshai">Akshai M</a></h4>
                 <p> Add Internet to your next project with an adorable, bite-sized WiFi microcontroller, at a price you like! The ESP8266 ESP12 processor from Espressif is an 80 MHz microcontroller with a full WiFi front-end (both as client and access point) and TCP/IP stack with DNS support as well.</p>
 				<P> Akshai is an expert in microcontroller programming. Join him to learn and hack with ESP12</P>
-                <a class="btn btn-primary" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -588,7 +582,7 @@
                 <font color="#2315AF">Fun with Chrome Extension Development</font></h3>
                 <h4>Mentor : <a href="#saptak">Saptak Sengupta</a></h4>
                 <p> With the entire information technology and user end slowly shifting towards website, browsers now play an important role. We can't think about a system without browser and Google Chrome is one of the most famous. But how about we increase the capabilities of a browser and make it do much more than it can actually do? Well, a Chrome Extension allows you to do exactly that and much more.</p>
-                <a class="btn btn-primary" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -607,7 +601,7 @@
                 <font color="#2315AF">Web Development using Front-end Frameworks</font></h3>
                 <h4>Mentor : <a href="#saptak">Saptak Sengupta</a></h4>
                 <p> Ever wondered how those huge websites are built and is there an easy way to get a decent website built in a very short period of time without needing to learn a lot? But then you don't want to use default website templates either? Well, you are in luck. Front-end frameworks like Bootstrap, Semantic-UI, Materialize allow you to do exactly that in a very limited amount of time. You can create your own custom website without thinking much about stylesheets and scripting.</p>
-                <a class="btn btn-primary" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#">Join this project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -624,7 +618,7 @@
                 <h3>Got a Brain wave? </h3>
                 <h4>Let's add it here !</h4>
                 <p>Propose your cool ideas for Science Hack Day India. Need Ideas? Browse through idea page of <a href="http://sciencehackday.pbworks.com/w/page/24555649/Ideas" target="blank" >London Science Hack Day</a>  </p>
-                <a class="btn btn-primary" href="#">Propose Hack Idea <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-projects-mentors" href="#">Propose Hack Idea <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
@@ -635,12 +629,6 @@
       
      </div>
 </div>
-<style>
-          a:link    {color:#2D2D6F; background-color:transparent; text-decoration:underline}
-          a:visited {color:#45435F; background-color:transparent; text-decoration:none}
-          a:hover   {color:#1B22C3; background-color:transparent; text-decoration:underline}
-          a:active  {color:yellow; background-color:transparent; text-decoration:underline}
-          </style>
 <hr>
 
 <!-- Footer -->
@@ -689,6 +677,9 @@
 
 <!-- Theme JavaScript -->
 <script src="js/clean-blog.min.js"></script>
+
+<!-- Sticky navbar script -->
+<script src="js/stickynavbar.js"></script>
 
 </body>
 
